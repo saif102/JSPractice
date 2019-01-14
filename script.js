@@ -3,7 +3,8 @@ function myFunction(a,b){
     return a * b;
 }
 
-console.log (myFunction(4,6));
+console.log (myFunction(4,6)); // Answer is 24
+
 
 // alert, prompt, push
 var x = myCalc(87,3);
