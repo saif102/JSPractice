@@ -1,0 +1,31 @@
+01. Download and install java sdk from the oracle website: "Java SE Development kit".
+
+02. Download and install android sdk from "https://developer.android.com".
+	Copy the sdk file into C:// and rename it to "android-sdk" for further work.
+	Now setup system variables:
+		myComputer>>properties>>advanceSystemSettings>>advancedTab>>environmentVarriables
+			systemVarriables>>path>>add paths:
+				c:\android-sdk\tools;c:\android-sdk\platform-tools;c:\android-sdk\tools\bin;
+	Create User  varriables:
+		myComputer>>properties>>advanceSystemSettings>>advancedTab>>environmentVarriables
+			userVariables>>new>>name: ANDROID_HOME; value:c:\android-sdk
+	To check it that installed correctly or not: cmd>>adb
+					  cmd>>uiautomatiorviewer (It should return the viewer app)
+		If it shows an error, then create an additional user variable:
+			userVariables>>new>>name: ANDROID_SWT; value:c:\android-sdk\tools\lib\x86
+
+03. Download and install ruby from rubyinstaller.org/downloads and download Ruby 2.3.3 (stable) and download the development kit for x64 and the version would be Ruby 2.0 and above. Copy, paste and unzip the development kit to the Ruby installed folder on "C:".  Open terminal and browse to the Ruby folder. cmd>>ruby dk.rb init. cmd>>ruby dk.rb install. Done! to check sucessfull installation: cmd>>ruby -v. It will show the installed version.
+	Troubleshooting: if it is not recognize the ruby command, then:
+		systemVarriables>>path>>add paths: C:\Ruby23-x64\bin
+
+04. Install "appium lib" and cucumber gem: cmd>>gem install cucumber; cmd>>gem install appium_lib
+
+05. Download and install "appium", go to appium.io and download the latest version and install it.
+
+06. Dowanload "RubyMineIDE" from jetbrains website and install it.
+
+Test automation framework must include.			
+Test Engine:	cucumber framework
+Driver:		appium/ selenium
+Client:		android/ ios
+
