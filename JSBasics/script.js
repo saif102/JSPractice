@@ -100,6 +100,34 @@ keeping in mind there might be draws.
 ****************************************/
 
 
+var scoreTom = (89 + 120 + 103) / 3;
+var scoreMike = (116 + 94 + 123) / 3;
+
+if(scoreTom > scoreMike)
+    {
+        console.log('Tom\'s team is winner with the average score of ' + scoreTom + '.');
+    }else if (scoreMike > scoreTom)
+        {
+           console.log('Mike\'s team is winner with the average score of ' + scoreMike + '.'); 
+        }else
+            console.log('The match has been drawn.');
+
+var scoreHarry = (97 + 134 + 105) / 3;
+
+if((scoreTom > scoreMike) && (scoreTom > scoreHarry))
+    {
+        console.log('Tom\'s team is winner with the average score of ' + scoreTom + '.');
+    }else if ((scoreMike > scoreTom) && (scoreMike > scoreHarry))
+        {
+           console.log('Mike\'s team is winner with the average score of ' + scoreMike + '.'); 
+        }else if ((scoreHarry > scoreTom) && (scoreHarry > scoreMike))
+        {
+           console.log('Harry\'s team is winner with the average score of ' + scoreHarry + '.'); 
+        }else
+            console.log('The match has been drawn.');
+
+
+
 
 
 
